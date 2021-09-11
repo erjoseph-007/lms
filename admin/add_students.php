@@ -81,7 +81,15 @@
 								$(_this).find('select option').attr('selected',false);
 								$(_this).find('select option:first').attr('selected',true);
 							});
+						},
+						error: function(response){
+							
+							if (response.status === 422) {
+								let text = JSON.parse(response.responseText);
+								alert(text.message);
+							}
 						}
+
 					});
 				});
 			});
