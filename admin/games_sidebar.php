@@ -4,7 +4,7 @@
 						<li>
                             <a href="subjects.php"><i class="icon-chevron-right"></i><i class="icon-list-alt"></i> Subject</a>
                         </li>
-						<li>
+						<li class="">
                             <a href="class.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Class</a>
                         </li>
 						<li>
@@ -13,7 +13,7 @@
 						<li>
                             <a href="department.php"><i class="icon-chevron-right"></i><i class="icon-building"></i> Department</a>
                         </li>
-						<li  class="active">
+						<li>
                             <a href="students.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Students</a>
                         </li>
 						<li>
@@ -22,7 +22,7 @@
                         <li>
                             <a href="parents.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Parents</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="games.php"><i class="icon-chevron-right"></i><i class="icon-star"></i> Games</a>
                         </li>
 						<li>
@@ -40,7 +40,7 @@
 						<li>
                             <a href="activity_log.php"><i class="icon-chevron-right"></i><i class="icon-file"></i> Activity Log</a>
                         </li>
-						<li>
+                        <li>
                             <a href="school_year.php"><i class="icon-chevron-right"></i><i class="icon-calendar"></i> School Year</a>
                         </li>
 						<li class="">

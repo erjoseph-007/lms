@@ -4,7 +4,7 @@
         <?php include('navbar.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
-                <?php include('student_sidebar.php'); ?>
+                <?php include('parents_sidebar.php'); ?>
                 <div class="span3" id="adduser">
                 <?php include('add_parents.php'); ?>                   
                 </div>
@@ -17,7 +17,7 @@
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12" id="studentTableDiv">
-                                    <?php include('student_table.php'); ?>
+                                    <?php include('parents_table.php'); ?>
                                 </div>
                             </div>
                         </div>

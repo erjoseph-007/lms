@@ -34,13 +34,13 @@
 										
 										<div class="control-group">
                                           <div class="controls">
-                                            <input class="input focused" name="firstname" id="focusedInput" type="text" placeholder = "Firstname">
+                                            <input class="input focused" name="firstname" id="focusedInput" type="text" placeholder = "Firstname" required>
                                           </div>
                                         </div>
 										
 										<div class="control-group">
                                           <div class="controls">
-                                            <input class="input focused" name="lastname" id="focusedInput" type="text" placeholder = "Lastname">
+                                            <input class="input focused" name="lastname" id="focusedInput" type="text" placeholder = "Lastname" required>
                                           </div>
                                         </div>
 										

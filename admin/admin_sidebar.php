@@ -22,7 +22,10 @@
                         <li>
                             <a href="parents.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Parents</a>
                         </li>
-							<li>
+                        <li>
+                            <a href="games.php"><i class="icon-chevron-right"></i><i class="icon-star"></i> Games</a>
+                        </li>
+                        <li>
                             <a href="downloadable.php"><i class="icon-chevron-right"></i><i class="icon-download"></i> Downloadable Materials</a>
                         </li>
 						<li>
