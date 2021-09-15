@@ -56,7 +56,7 @@
                                           </div>
                                         </div>
                                 </form>
-								</div>
+								              </div>
                             </div>
                         </div>
                         <!-- /block -->
@@ -64,13 +64,13 @@
 					
 					
 		
-	      <?php
-                            if (isset($_POST['update'])) {
-                               
-                                $un = $_POST['un'];
-                                $fn = $_POST['fn'];
-                                $ln = $_POST['ln'];
-                                $cys = $_POST['cys'];
+	             <?php
+                if (isset($_POST['update'])) {
+                   
+                    $un = $_POST['un'];
+                    $fn = $_POST['fn'];
+                    $ln = $_POST['ln'];
+                    $cys = $_POST['cys'];
                       
 
 								mysqli_query($conn,"update student set username = '$un' , firstname ='$fn' , lastname = '$ln' , class_id = '$cys' where student_id = '$get_id' ")or die(mysqli_error());
@@ -81,5 +81,5 @@
 								window.location = "students.php"; 
 								</script>
 
-                       <?php     }  ?>
+                <?php     }  ?>
 	

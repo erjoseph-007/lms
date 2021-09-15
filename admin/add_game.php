@@ -9,15 +9,13 @@
 				<form method="post" enctype="multipart/form-data">
 
 				
-						<label>Photo:</label>
+						<label>Game Logo:</label>
 						<div class="control-group">
 		                  <div class="controls">
 		                      <input class="input-file uniform_on" id="fileInput" type="file" name="photos" required>
 		                  </div>
 		                </div>
 					
-						  
-						
 						<div class="control-group">
 		                  <div class="controls">
 		                    <input class="input focused" name="game_name" id="focusedInput" type="text" placeholder = "Game Name" required>
@@ -77,7 +75,7 @@
 						} // size is greater than 5MB
 
 
-						mysqli_query($conn,"insert into games (game_name,game_link,game_logo)
+						mysqli_query($conn,"INSERT into games (game_name,game_link,game_logo)
 						values ('$game_name','$game_link','$uploads')         
 						") or die(mysqli_error()); 
 

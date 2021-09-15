@@ -17,14 +17,7 @@
 										<label>Game Logo:</label>
 										<div class="control-group">
 						                  <div class="controls">
-						                      <input class="input-file uniform_on" value="<?php echo $row['game_logo']; ?>" id="fileInput" type="file" name="photos" required>
-
-						                      <?php
-							              		$query = mysqli_query($conn,"SELECT * FROM games WHERE game_id = '$get_id'")or die(mysqli_error());
-							              		$row = mysqli_fetch_array($query);
-							              		?>
-
-
+						                      <input class="input-file uniform_on" id="fileInput" type="file" name="photos" required>
 						                  </div>
 						                </div>
 
@@ -42,7 +35,7 @@
 										
 										<div class="control-group">
                                      	 <div class="controls">
-												<button name="update" class="btn btn-success"><i class="icon-save icon-large"></i></i> Update</a></button>
+											<button name="update" class="btn btn-success"><i class="icon-save icon-large"></i></i> Update</a></button>
 
                                           </div>
                                         </div>
@@ -55,25 +48,25 @@
 					
 					
 				   <?php
-                            if (isset($_POST['update'])) {
-                       			$game_logo = $_POST['game_logo'];
-                                $game_name = $_POST['game_name'];
-                                $game_link = $_POST['game_link'];
-                                
-								if ($count > 1){ ?>
-								<script>
-								alert('Data Already Exist');
-								</script>
-								<?php
-								}else{
-								
-								mysqli_query($conn,"UPDATE games set game_name = '$game_name' , game_link ='$game_link' , game_logo = '$game_logo' where game_id = '$get_id' ")or die(mysqli_error());
+                    if (isset($_POST['update'])) {	
+                        $game_name = $_POST['game_name'];
+                        $game_link = $_POST['game_link'];
 
+                        
+						if ($count > 1){ ?>
+						<script>
+						alert('Data Already Exist');
+						</script>
+							<?php
+							}else{
+							
+							mysqli_query($conn,"UPDATE games set game_name = '$game_name' , game_link ='$game_link' where game_id = '$get_id' ")or die(mysqli_error());
 
-								?>
-								<script>
-							 	window.location = "games.php"; 
-								</script>
-								<?php   }} ?>
-						 
-						 
+							?>
+							
+						<script>
+					 	window.location = "games.php"; 
+						</script>
+					<?php   }} ?>
+
+					
