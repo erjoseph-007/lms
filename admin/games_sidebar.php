@@ -4,7 +4,7 @@
 						<li>
                             <a href="subjects.php"><i class="icon-chevron-right"></i><i class="icon-list-alt"></i> Subject</a>
                         </li>
-						<li class="">
+						<li>
                             <a href="class.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Class</a>
                         </li>
 						<li>

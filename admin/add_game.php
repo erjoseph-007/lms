@@ -12,7 +12,7 @@
 						<label>Photo:</label>
 						<div class="control-group">
 		                  <div class="controls">
-		                      <input class="input-file uniform_on" id="fileInput" type="file" name="photos" />
+		                      <input class="input-file uniform_on" id="fileInput" type="file" name="photos" required>
 		                  </div>
 		                </div>
 					
@@ -67,14 +67,15 @@
 						$size 			= (int) $_FILES['photos']['size'];
 						$uploads 		= $uploadPath . "/" . $new;
 
-						if ($size > 50000) {
+						if ($size > 5000) {
 							?>
-
 								<script>
 									alert("Photo uploaded must be less than 5MB.");
 								</script>
-							<?php
-						} // size is greater than 3MB
+
+							<?php 
+						} // size is greater than 5MB
+
 
 						mysqli_query($conn,"insert into games (game_name,game_link,game_logo)
 						values ('$game_name','$game_link','$uploads')         

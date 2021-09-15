@@ -10,24 +10,25 @@
 							$query = mysqli_query($conn,"select * from student LEFT JOIN class ON class.class_id = student.class_id where student_id = '$get_id'")or die(mysqli_error());
 							$row = mysqli_fetch_array($query);
 							?>
-                                <div class="span12">
-								<form method="post">
-								
-								        <div class="control-group">
+              <div class="span12">
+							<form method="post">
+              <div class="control-group">
                                    
-                                          <div class="controls">
-                                            <select  name="cys" class="" required>
-                                             	<option value="<?php echo $row['class_id']; ?>"><?php echo $row['class_name']; ?></option>
-											<?php
-											$cys_query = mysqli_query($conn,"select * from class order by class_name");
-											while($cys_row = mysqli_fetch_array($cys_query)){
-											
-											?>
-											<option value="<?php echo $cys_row['class_id']; ?>"><?php echo $cys_row['class_name']; ?></option>
-											<?php } ?>
-                                            </select>
-                                          </div>
-                                        </div>
+              <div class="controls">
+                <select  name="cys" class="" required>
+                 	<option value="<?php echo $row['class_id']; ?>">
+                    <?php echo $row['class_name']; ?>
+                  </option>
+              		<?php
+              		$cys_query = mysqli_query($conn,"select * from class order by class_name");
+              		while($cys_row = mysqli_fetch_array($cys_query)){
+              		
+              		?>
+              		<option value="<?php echo $cys_row['class_id']; ?>"><?php echo $cys_row['class_name']; ?></option>
+              		<?php } ?>
+                </select>
+              </div>
+              </div>
 								
 										<div class="control-group">
                                           <div class="controls">
