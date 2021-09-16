@@ -29,38 +29,34 @@
                                     <th>Link</th>
 
                                     <th></th>
-                                </tr>
-										</thead>
-										<tbody>
-												 <?php
+                                    </tr>
+									</thead>
+									<tbody>
+								<?php
                                     $game_query = mysqli_query($conn,"select * from games") or die(mysqli_error());
                                     while ($row = mysqli_fetch_array($game_query)) {
                                     $id = $row['game_id'];
-
-                                        ?>
+                                ?>
 									<tr>
-										<td width="30">
-										<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
-										</td>
+									<td width="30">
+									<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
+									</td>
                                     <td width="40"><img class="img-circle" src="<?php echo $row['game_logo']; ?>" height="50" width="50"></td> 
                                     <td><?php echo $row['game_name'] . " "; ?></td> 
                                     <td><?php echo $row['game_link']; ?></td> 
                                
 									<td width="50"><a href="edit_game.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-pencil"></i></a></td>
-									
                                 </tr>
                             <?php } ?>
-                               
-										</tbody>
-									</table>
-									</form>
-                                </div>
+                           
+									</tbody>
+								</table>
+								</form>
                             </div>
                         </div>
-                        <!-- /block -->
                     </div>
-
-
+                    <!-- /block -->
+                </div>
                 </div>
             </div>
 		<?php include('footer.php'); ?>
