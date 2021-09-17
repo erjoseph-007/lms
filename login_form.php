@@ -9,7 +9,10 @@
 									$('#signin').tooltip('hide');
 								});
 								</script>		
+			
+			<a href="http://localhost/final/lms/forgot_password.php">Forgot Password!</a>
 			</form>
+
 						<script>
 						jQuery(document).ready(function(){
 						jQuery("#login_form1").submit(function(e){
