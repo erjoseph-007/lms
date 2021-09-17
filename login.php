@@ -4,13 +4,6 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-		/* PARENT */
-
-		$query = "SELECT * FROM parents WHERE username='$username' AND password='$password'";
-			$result = mysqli_query($conn,$query)or die(mysqli_error());
-			$row = mysqli_fetch_array($result);
-			$num_row = mysqli_num_rows($result);
-
 		/* student */
 			$query = "SELECT * FROM student WHERE username='$username' AND password='$password'";
 			$result = mysqli_query($conn,$query)or die(mysqli_error());
@@ -23,12 +16,7 @@
 		
 		if( $num_row > 0 ) { 
 		$_SESSION['id']=$row['student_id'];
-		echo 'true_student';	
-
-		}if ($num_row_parent > 0){
-		$_SESSION['id']=$row_parent['parent_id'];
-		echo 'true';
-
+		echo 'true_student';
 
 		}else if ($num_row_teacher > 0){
 		$_SESSION['id']=$row_teahcer['teacher_id'];
