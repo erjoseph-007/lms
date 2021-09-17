@@ -95,18 +95,14 @@
 			});
 			</script>
 										
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /block -->
-                    </div>
-					
-
-	
-
                 </div>
-	
             </div>
+        </div>
+        <!-- /block -->
+    </div>
+    </div>
+
+</div>
 		<?php include('footer.php'); ?>
         </div>
 		<?php include('script.php'); ?>

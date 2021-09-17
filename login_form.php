@@ -3,12 +3,12 @@
 						<input type="text" class="input-block-level" id="username" name="username" placeholder="ID Number / Username" required>
 						<input type="password" class="input-block-level" id="password" name="password" placeholder="Password" required>
 						<button data-placement="bottom" title="Click Here to Sign In" id="signin" name="login" class="btn btn-info btn-block" type="submit"><i class="icon-signin icon-large"></i> Sign in</button>
-														<script type="text/javascript">
-														$(document).ready(function(){
-															$('#signin').tooltip('show');
-															$('#signin').tooltip('hide');
-														});
-														</script>		
+								<script type="text/javascript">
+								$(document).ready(function(){
+									$('#signin').tooltip('show');
+									$('#signin').tooltip('hide');
+								});
+								</script>		
 			</form>
 						<script>
 						jQuery(document).ready(function(){
