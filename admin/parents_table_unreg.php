@@ -5,7 +5,7 @@
 	<div class="pull-right">
 			    <ul class="nav nav-pills">
 				<li class="">
-					<a href="students.php">All</a>
+					<a href="parents.php">All</a>
 				</li>
 				<li class="active">
 					<a href="unreg_students.php">Unregistered</a>
