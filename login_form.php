@@ -9,7 +9,7 @@
 									$('#signin').tooltip('hide');
 								});
 								</script>		
-			
+			<br>
 			<a href="http://localhost/final/lms/forgot_password.php">Forgot Password!</a>
 			</form>
 
@@ -33,6 +33,10 @@
 										$.jGrowl("Welcome to Modular Edutainment System", { header: 'Access Granted' });
 									var delay = 1000;
 										setTimeout(function(){ window.location = 'student_notification.php'  }, delay);  
+									}else if (html == 'true_parent'){
+										$.jGrowl("Welcome to Modular Edutainment System", { header: 'Access Granted' });
+									var delay = 1000;
+										setTimeout(function(){ window.location = 'dashboard_parent.php'  }, delay);  
 									}else
 									{
 									$.jGrowl("Please check your Username and Password", { header: 'Login Failed' });

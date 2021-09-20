@@ -24,7 +24,7 @@
 				
 					 
                         <!-- block -->
-                        <div class="block">
+                     <!--   <div class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-right">
 									<?php $query = mysqli_query($conn,"select * from teacher_class_student
@@ -75,7 +75,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- /block -->
                     </div>
 
