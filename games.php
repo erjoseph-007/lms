@@ -12,7 +12,7 @@
 					<?php $query = mysqli_query($conn,"SELECT * FROM games WHERE game_id = '$session_id'")
 					or die(mysqli_error());
 					$row = mysqli_fetch_array($query);
-					$id = $row['game_id'];
+					$id = $row['game_id'] ?? null;
 
 					?>
 					     <ul class="breadcrumb">
