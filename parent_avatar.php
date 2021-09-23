@@ -11,14 +11,15 @@
                                 $image_size = getimagesize($_FILES['image']['tmp_name']);
 
                                 move_uploaded_file($_FILES["image"]["tmp_name"], "admin/uploads/" . $_FILES["image"]["name"]);
-                                $location = "uploads/" . $_FILES["image"]["name"];
+                                $photo = "uploads/" . $_FILES["image"]["name"];
 								
-								mysqli_query($conn,"UPDATE student set location = '$location' where student_id  = '$session_id' ")or die(mysqli_error());
+								mysqli_query($conn,"UPDATE parents SET photo = '$photo' WHERE parent_id  =
+									'$session_id' ")or die(mysqli_error());
 								
 								?>
  
 								<script>
-								window.location = "dashboard_student.php";  
+								window.location = "dashboard_parent.php";  
 								</script>
 
                        <?php     }  ?>

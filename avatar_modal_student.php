@@ -19,5 +19,5 @@
 		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Close</button>
 		<button class="btn btn-info" name="change"><i class="icon-save icon-large"></i> Save</button>
 	</div>
-					</form>
+</form>
 </div>
